@@ -136,7 +136,7 @@ a {
 /* line 63, ../../../sass/public.scss */
 #content {
   position: relative;
-  width: 1000px;
+  width: 1000px !important;
   margin: 0 auto;
   font-size: 18px;
   color: #eeeeee;
