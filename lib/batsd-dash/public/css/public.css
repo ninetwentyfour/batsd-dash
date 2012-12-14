@@ -226,6 +226,8 @@ a {
 #content .list-container ul {
   list-style: circle;
   padding-left: 30px;
+  max-height:725px;
+  overflow:auto;
 }
 
 /* line 137, ../../../sass/public.scss */
