@@ -61,6 +61,7 @@ a { text-decoration:none; font-family:$fontFamily; color:inherit; }
 }
 
 #content {
+    float: none !important;
     position:relative;
     width:$contentWidth;
     margin:0 auto;
