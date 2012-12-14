@@ -31,7 +31,8 @@
         var list = container.append('ul');
 
         for (var i = 0, m; m = metrics[i]; i++)
-          list.append('li').append('a').text(m).attr('href', graph_href(type, m));
+          var myTruncatedString = m.substring(0,40) + '...';
+          list.append('li').append('a').text(myTruncatedString).attr('href', graph_href(type, m));
       }
     });
   }());
