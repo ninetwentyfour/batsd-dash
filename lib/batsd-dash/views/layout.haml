@@ -39,6 +39,7 @@
             %a{:href => '/users'} Users
     #content
       %input#xxx{:name => "xxx", :onclick => "reload_page();", :type => "checkbox"} Auto Refresh
+      %hr
       = yield
 
     - if locals && locals[:user_template]
