@@ -86,10 +86,6 @@
           return null;
         }
 
-        $(document).ready(function() {
-          // Handler for .ready() called.
-          if $.cookie("autorefresh") == 'true' {
-            $('#xxx').attr('checked','checked');
-            reload_page();
-          }
+        $(document).ready(function () {
+          alert($.cookie("autorefresh"));
         });
