@@ -58,11 +58,12 @@
           });
         }());
         function reload_page(){
-          if(document.getElementById('xxx').checked)
+          if(document.getElementById('xxx').checked){
             setTimeout(refresh, 10000);
             document.cookie = 'autorefresh=true';
-          else
+          }else{
             document.cookie = 'autorefresh=false';
+          }
         }
         var time = new Date().getTime();
 
