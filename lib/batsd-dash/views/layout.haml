@@ -78,7 +78,6 @@
         }
 
         $(document).ready(function () {
-          alert($.cookie("autorefresh"));
           if($.cookie("autorefresh") == 'refresh') {
             $('#xxx').attr('checked','checked');
             reload_page();
