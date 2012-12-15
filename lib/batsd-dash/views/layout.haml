@@ -63,9 +63,9 @@
           if(document.getElementById('xxx').checked){
             setTimeout(refresh, 10000);
             document.cookie = 'autorefresh=true';
-            $.cookie("autorefresh", "true");
+            $.cookie("autorefresh", "refresh");
           }else{
-            $.cookie("autorefresh", "false");
+            $.cookie("autorefresh", "no_refresh");
           }
         }
         var time = new Date().getTime();
@@ -90,4 +90,8 @@
 
         $(document).ready(function () {
           alert($.cookie("autorefresh"));
+          if $.cookie("autorefresh") == 'refresh' {
+            $('#xxx').attr('checked','checked');
+            reload_page();
+          }
         });
