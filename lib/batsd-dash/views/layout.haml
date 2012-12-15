@@ -36,7 +36,7 @@
           %li
             %a{:href => '/users'} Users
     #content
-      %input#xxx{:name => "xxx", :onclick => "calc();", :type => "checkbox"} Auto Refresh
+      %input#xxx{:name => "xxx", :onclick => "reload_page();", :type => "checkbox"} Auto Refresh
       = yield
 
     - if locals && locals[:user_template]
