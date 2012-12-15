@@ -17,7 +17,7 @@ module Batsd::Dash
       set :port, config.delete(:port) || 8127
 
       set :view_names, [:root, :view, :missing, :layout, :loading]
-      @views = :views
+
       @connection_pool = ConnectionPool.new(config) do
         Connection.new(host, port)
       end
@@ -48,7 +48,6 @@ module Batsd::Dash
     end
 
     get "/", provides: :html do
-      @views
       haml :root
     end
 

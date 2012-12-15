@@ -27,7 +27,10 @@
       .wrap
         %h1
           %a{:href => '/'} Batsd Dash
-          = @views
+      %nav
+        %ul
+          %li
+            %a{:href => '/requests'} Requests
     #content
       = yield
 
