@@ -126,7 +126,6 @@ a {
 /* line 56, ../../../sass/public.scss */
 #header ul li {
   float: left;
-  margin: 0 20px;
 }
 /* line 58, ../../../sass/public.scss */
 #header ul li a {
@@ -419,4 +418,10 @@ a {
 /* line 34, ../../../sass/_charts.scss */
 .nvtooltip h3, .nvtooltip p {
   color: #222222;
+}
+input {
+	width:20px !important;
+}
+hr {
+	border-top: 1px solid lime !important;
 }
